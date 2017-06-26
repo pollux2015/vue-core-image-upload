@@ -235,7 +235,7 @@
           return typeof callback === 'function' && callback();
         }
         let data;
-        if (false && isBinary) {
+        if (isBinary) {
           data = {
             type: this.files[0]['type'],
             filename: this.files[0]['name'],
@@ -261,7 +261,6 @@
             // 添加参数
             let data_ = {x: this.data['toCropImgX'], y: this.data['toCropImgY'], height: this.data['toCropImgH'], width: this.data['toCropImgW'], rotate: 0 };
             data.append('data', JSON.stringify(data_));
-            console.log(data_);
           }
         }
 
