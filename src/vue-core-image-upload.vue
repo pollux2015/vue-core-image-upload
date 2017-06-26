@@ -258,6 +258,7 @@
             }
           }
         }
+        console.log(data);
         xhr('POST',this.url, this.headers, data, done, errorUpload, isBinary);
       },
     },
