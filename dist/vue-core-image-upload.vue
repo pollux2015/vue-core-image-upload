@@ -235,6 +235,7 @@
           return typeof callback === 'function' && callback();
         }
         let data;
+        console.log(data);
         if (isBinary) {
           data = {
             type: this.files[0]['type'],
