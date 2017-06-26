@@ -247,18 +247,23 @@
           }
         } else {
           data = new FormData();
+          
           for (let i=0;i<this.files.length;i++) {
             data.append(this.name, this.files[i]);
           }
           if (typeof this.data === 'object') {
+            
             for(let k in this.data) {
               if(this.data[k] !== undefined) {
                 data.append(k,this.data[k]);
               }
             }
+            // 添加参数
+            let data_ = {x: this.data['toCropImgX'], y: this.data['toCropImgY'], height: this.data['toCropImgH'], width: this.data['toCropImgW'], rotate: 0 };
+            data.append('data', JSON.stringify(data_));
           }
         }
-        console.log(data);
+
         xhr('POST',this.url, this.headers, data, done, errorUpload, isBinary);
       },
     },
