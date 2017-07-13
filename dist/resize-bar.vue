@@ -15,6 +15,7 @@
     width:200px;
     margin-left: -100px;
     left: 50%;
+    z-index: 9999;
     background-color: #5cadff;
   }
   .g-resize-highlight{
@@ -83,7 +84,6 @@ export default {
       };
       const move = function (ev) {
         const newCoor = drag(ev, self.el, coor);
-        console.log(newCoor);
         if (newCoor) {
           if((newCoor.left / width) < self.minProgress) {
             return;
