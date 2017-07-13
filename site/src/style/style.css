@@ -95,12 +95,11 @@
   cursor: not-allowed;
 }
 .g-core-image-corp-container .btn-upload{
-  background: #27ae60;
-  border-color:#27ae60;
+  background: #2d8cf0;
+  border-color:#2d8cf0;
   color:#fff;
 }
 .g-core-image-corp-container .btn-upload:hover{
-  background: #2dc26c;
-  border-color:#27ae60;
-  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  background: #3091f2;
+  border-color:#3091f2;
 }
