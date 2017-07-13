@@ -249,17 +249,13 @@
           data = new FormData();
           
           for (let i=0;i<this.files.length;i++) {
-            data.append(this.name, this.files[i]);
+            data.append('file', this.files[i]);
           }
           if (typeof this.data === 'object') {
             
             for(let k in this.data) {
               if(this.data[k] !== undefined) {
-                if(k == 'files'){
-                  data.append('file',this.data[k]);
-                }else{
-                  data.append(k,this.data[k]);
-                }
+                data.append(k,this.data[k]);
               }
             }
             // 添加参数
