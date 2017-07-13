@@ -15,15 +15,14 @@
     width:200px;
     margin-left: -100px;
     left: 50%;
-    background-color: #a8f9ca;
-    box-shadow: 0 2px 3px -1px rgba(0,0,0,.3);
+    background-color: #5cadff;
   }
   .g-resize-highlight{
     position: absolute;
     left: 0;
     top:0;
     height: 6px;
-    background-color: #27ae60;
+    background-color: #2d8cf0;
     border-radius: 3px;
   }
   .circle-btn{
