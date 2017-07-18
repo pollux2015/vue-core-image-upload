@@ -260,7 +260,7 @@
             }
             // 添加参数
             let data_ = {x: this.data['toCropImgX'], y: this.data['toCropImgY'], height: this.data['toCropImgH'], width: this.data['toCropImgW'], rotate: 0 };
-            data.append('crop', JSON.stringify(data_));
+            data.append('data', JSON.stringify(data_));
           }
         }
 
